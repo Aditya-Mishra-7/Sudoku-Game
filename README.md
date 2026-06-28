@@ -1,4 +1,4 @@
-*Sudoku Game by Adi*
+*Sudoku Game by Aditya
 
 An interactive, responsive Sudoku Game Matrix Application constructed using pure web-standard technologies (HTML5, CSS3, and ES6+ JavaScript). Built entirely from scratch, the system operates completely on the client side without relying on external frameworks, bulky dependencies, or third-party APIs.
 
