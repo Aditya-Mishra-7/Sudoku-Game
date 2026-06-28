@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game by Adi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="application-frame">
+        <div class="stats-ribbon">
+            <div class="ribbon-node" id="game-mode-display">Tier: Loading</div>
+            <div class="ribbon-node" id="clock-display">Elapsed: 00:00</div>
+        </div>
+
+        
+        <main class="numerical-matrix-board" id="interactive-grid-mesh"></main>
+
+        
+        <div class="tactile-input-rail">
+            <button class="rail-trigger numeric-key" data-digit="1">1</button>
+            <button class="rail-trigger numeric-key" data-digit="2">2</button>
+            <button class="rail-trigger numeric-key" data-digit="3">3</button>
+            <button class="rail-trigger numeric-key" data-digit="4">4</button>
+            <button class="rail-trigger numeric-key" data-digit="5">5</button>
+            <button class="rail-trigger numeric-key" data-digit="6">6</button>
+            <button class="rail-trigger numeric-key" data-digit="7">7</button>
+            <button class="rail-trigger numeric-key" data-digit="8">8</button>
+            <button class="rail-trigger numeric-key" data-digit="9">9</button>
+            <button class="rail-trigger utility-key" id="purge-digit-action">⌫</button>
+        </div>
+
+    
+        <div class="operator-panel">
+            <select class="selection-dropdown" id="difficulty-setting-node">
+                <option value="42">Novice Mode (42 Clues)</option>
+                <option value="32">Standard Mode (32 Clues)</option>
+                <option value="24">Expert Mode (24 Clues)</option>
+            </select>
+            <button class="action-btn core-green" id="instantiate-game-trigger">Initialize Grid</button>
+            <button class="action-btn structural-blue" id="audit-matrix-trigger">Verify Layout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
